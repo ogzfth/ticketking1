@@ -1,115 +1,454 @@
-@media all /*and (min-width: 1024px)*/
-{
-
-  .slider-box {
-    position: absolute;
-    left: 200px;
-    right: 200px;
-    width: 74%;
-    height: 400px;
-    margin: 20px 24px 20px 24px;
+  html {
+    scroll-behavior:smooth;
   }
-
-  body{
+  body {
       font-family:"Montserrat";
-      text-align:center;
       
   }
   h1, h2, h3, h4, h5, h6 {
-      font-family: "Montserrat-Bold"  
+      font-family: "Montserrat"
+  }
+
+  .whitetext {
+    color:white;
+  }
+
+  .leftalign {
+    text-align:left;
+  }
+
+  .bold {
+    font-weight:bold;
+  }
+
+
+
+/* Navigation Bar */
+
+
+.navbar {
+    padding: 0 0 4.5rem;  
+}
+
+.navbar-brand {
+    font-family:Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left:10px;   
+}
+  
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.7rem;
+    font-family: "Montserrat";    
+    font-weight:lighter;
+}
+  
+#title {
+    background-color:#E71414;
+    text-align:center;    
+}
+
+#title .container-fluid {
+  padding:1.5% 6% 11%;
+  height:810px;    
+}
+  
+ 
+.navbar-background {
+  position:absolute;
+  width: 100%;
+  height: 810px;
+  left:0px;
+  right:0px;  
+  padding:0px;
+  top:0px;
+  z-index:0;
+  opacity:1;
+}
+
+#mobile {
+  display:none;
+}
+ 
+#crown {
+  position:relative;
+  height:30px;
+  bottom:8px;  
+}
+  
+#title-text{  
+  position:relative;  
+  color:white;
+  z-index:1;
+  top:45px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 80px;  
+}
+
+
+  /*search box */
+  
+.search-box {
+  position:relative;
+  top:150px;  
+  background:red;
+  max-width:550px;
+  width:100%;
+  padding:6px;
+  border-radius:20px;  
+  background-color: #e9e9e9;
+  z-index:1;
+}
+
+.search-box input {
+  border:none;
+  background-color: #e9e9e9;
+  width:85%;
+  padding:15px 20px;
+  border-style:none;
+}
+
+.search-icon {
+  height:20px;
+}
+
+.arrow-down {
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+  content:"";
+  width:40px;
+  height:40px;
+  position:relative;
+  top:220px;  
+  z-index:1;
+  margin:auto;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  transform:rotate(45deg);
+}
+
+/* Categories */
+
+#categories {
+    padding:5% 16%;    
+}
+
+.categories-column {
+    padding:0.5% 1%;
+}
+
+.categories-icon {
+  height:50px;
+  margin-right:10px;  
+}
+
+.categories-button {
+  background-color:#f7f7f7;
+}
+
+.categories-button:hover {
+  background-color:#e8e4e1;
+}
+
+.categories-row {
+  margin-top:30px;
+}
+
+#categories h2 {
+  font-size:30px;
+}
+
+#categories p {
+  margin-left:3px;
+  color:#5b5656;
+}
+
+/* Events */
+
+#Events {
+  margin-top:40px;   
+}
+ 
+.Events-row {
+  margin-top:30px;
+}
+
+.Events-data {    
+  Position:relative;
+   top:7px; 
+}
+
+#Events p {
+  margin-left:3px;
+  color:#5b5656;
+}
+
+#Events table {
+  padding:0px;
+  white-space:nowrap;
+}
+
+#Events table p {
+  font-size:10px;
+  color:#888888;
+}
+
+#Events h6 {
+ position:relative;
+ top:4px;  
+}
+
+/* Slider-box */
+
+#slider-box {
+  padding:0px;
+  padding:3% 10%;   
+  width:90%;
+  margin:0 auto;     
+}
+ 
+/* customers */
+
+section.customers {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;  
+} 
+
+div.customers-slide1 {
+  width: 98%;
+}
+
+div.customers-slide2 {
+  width: 98%;
+}
+
+.customers-slide3 {
+  width: 98%;
+}
+  
+/* Footer*/
+
+#footer {
+  text-align:center;
+}
+
+div.footer {
+  width: 100%;
+}
+
+div.copyright {
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+div.footer a, a:visited {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    padding: 0 5px 0 2px;
+} 
+
+div.footer a:hover {
+  text-decoration: none;
+  color: rgba(12, 0, 86, 1);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+
+
+
+  @media (max-width:1200px) {
+
+    #title {
+      text-align:center;
+    }
+    
+    #title-text {
+      font-size:36px;
+      line-height:75px;    
+    }
+    
+    #categories {
+      padding:5% 13%;      
+    }
+    
+    #navbar-background {
+      width:100%;
+    }
+    
+    #slider-box {      
+        width:95%;
+    }  
+    
+    .categories-column {
+      padding:2% 1%;
     }
 
-    .whitetext{
-      color:white;
+    /* customers */
+
+    section.customers {
+      display: flex;
+      width: 74%;
+      margin-left: 13%;
+    }   
+
+    div.footer {
+      width: 100%;
     }
-
-
-
-  /* Navigation Bar */
-  .navbar {
-      padding: 0 0 4.5rem;
+  
+    div.copyright {
+      margin-top: 8px;
+      margin-bottom: 10px;
     }
-
-  .navbar-brand {
-      font-family:Montserrat;
-      font-style: normal;
+  
+    div.footer a {
+      border-right: 1px solid rgb(0, 0, 0, 0.4);
+      padding: 0 5px 0 2px;
+    } 
+    
+    
+    div.footer a:last-of-type {
+      border-right: none;
+    }
+  
+    div.footer a, a:visited {
+        text-decoration: none;
+        color: rgb(128, 128, 128);
+    } 
+  
+    div.footer a:hover {
+      text-decoration: none;
+      color: rgba(12, 0, 86, 1);
       font-weight: bold;
-      font-size: 36px;
-      font-size: 2rem;
-      font-weight: bold;
-      padding-left:10px;
-    
-    }
-    
-  .nav-item {
-      padding: 0 18px;
-    }
-  .nav-link {
-      font-size: 1.7rem;
-      font-family: "Montserrat-Light";
-    }
-    
-  #title {
-      background-color:#E71414;
-      text-align: left;
-    
+      font-size: 15px;
     }
 
-    #title .container-fluid {
-      padding: 1.5% 6% 16%;
-    }
+  }
+  @media (max-width: 800px) {
 
-    #navbar-background{
-      position: absolute;
-      width: 1550px;
-    height: 675px;
-      left: -14px;
-      top:0px;
-      z-index:0;
-    
+    #title {
       
-
-    opacity: 0.9;
     }
-
-    #crown{
+    
+    #categories {
+      padding:5% 11%;
+      
+    }
+    
+    #title-text {
+      font-size:23px;
+      line-height:70px;
+      padding:10px;
       position:relative;
-      height:40px;
-      bottom:8px;
+      text-align:center;
+    }
+
+    #navbar-background {
+      width:100%;
+    }   
+  
+    .categories-column {
+      padding:2% 1%;      
+    }
+ 
+    #slider-box {
       
+    width:95%;
     }
     
+    #normal {
+      display:none;
+    }
+    
+    #mobile {
+      display:inline-block;
+    }
+    
+    #Events h6 {      
+      right:5px;
+      font-size:70%;
+    }
+    
+    #Events p {
+      position:relative;
+      right:7px;
+    }
+    
+    /* customers */
+
+    section.customers {
+      margin-bottom:4px;
+    }
+    
+    div.customers-slide1 {
+      max-width: 250px;
+      margin-left: 8%;      
+    }
+    
+    div.customers-slide2 {
+      max-width: 250px;
+      margin-right: 8%;
+    }
+    
+    div.customers-slide3 {
+      display: none;
+    }
+
+    div.footer {
+      width: 100%;
+      font-size: 10px;
+    }
+  
+    div.copyright {
+      margin-top: 4px;
+      margin-bottom: 5px;
+    }
+  
+    div.footer a {
+      border-right: 1px solid rgb(0, 0, 0, 0.4);
+      padding: 0 5px 0 2px;
+    } 
+    
+    
+    div.footer a:last-of-type {
+      border-right: none;
+    }
+  
+    div.footer a, a:visited {
+        text-decoration: none;
+        color: rgb(128, 128, 128);
+    } 
+  
+    div.footer a:hover {
+      text-decoration: none;
+      color: rgba(12, 0, 86, 1);
+      font-weight: bold;
+      font-size: 10px;
+    }
+
+  }
+ 
+  
+
+  @media (min-width: 1500px) {
     #title-text{
       
-      position:relative;
-      color:white;
-      z-index:1;
-      top:50px;
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 60px;
-      line-height: 88px;
-      
-      
+     
     }
+  }
+  
 
-
-
-
-
-
-
-
-
-    @media (max-width: 1028px) {
-
-      #title {
-        text-align: center;
-      }
-      #title-text{
-        font-size:40px
-      }
-    
-    }
-}  
